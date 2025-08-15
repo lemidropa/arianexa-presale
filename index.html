@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arianexa Presale — $NEXA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fauna+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Arianexa presale on Base. Empowering through AI & Web3." />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__brand">
+      <img src="assets/arianexa_logo.jpg" alt="Arianexa logo" class="logo" />
+      <span>Arianexa</span>
+    </div>
+    <nav class="nav__links">
+      <a href="#presale">Presale</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#community">Community</a>
+      <a href="#docs">Docs</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="assets/arianexa_banner.jpg" alt="Arianexa banner" class="hero__bg" />
+    <div class="hero__content">
+      <h1>Join the $NEXA Presale</h1>
+      <p>Empowering people globally with AI-driven DeFi tools.</p>
+      <div id="countdown" class="countdown">Countdown loading…</div>
+      <div class="cta-row">
+        <a class="btn primary" href="#presale">Participate</a>
+        <a class="btn ghost" href="https://arianexa.xyz/Arianexa_Whitepaper.pdf" target="_blank" rel="noopener">Whitepaper</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="presale" class="section">
+    <h2>Presale Details</h2>
+    <div class="grid two">
+      <div>
+        <ul class="list">
+          <li><strong>Network:</strong> Base</li>
+          <li><strong>Token:</strong> $NEXA (Decimals: 8)</li>
+          <li><strong>Total Supply:</strong> 10,000,000,000</li>
+          <li><strong>Contract:</strong> <a href="https://basescan.org/token/0xC1C3954ad740353a5F09c31a4aEc6bD4c34e2Ad1" target="_blank" rel="noopener">0xC1C3954ad740353a5F09c31a4aEc6bD4c34e2Ad1</a></li>
+          <li><strong>Phase 1 Price:</strong> $0.005 – $0.007</li>
+          <li><strong>Soft Cap:</strong> $5M &nbsp;•&nbsp; <strong>Hard Cap:</strong> $10M</li>
+          <li><strong>Start:</strong> 8 Aug 2025, 10:00 PM WAT</li>
+        </ul>
+        <div class="note">Note: Some raised funds may be allocated to accelerate infrastructure & marketing.</div>
+      </div>
+      <div>
+        <!-- Presale Widget -->
+        <div id="presale-widget" style="max-width: 420px; margin: auto; padding: 20px; background: #1a1a1a; border-radius: 12px; color: #fff; font-family: sans-serif;">
+          <h3 style="text-align:center; margin-bottom: 20px;">NEXA Presale</h3>
+
+          <div style="margin-bottom: 10px;">
+            <button id="connectBtn" class="btn primary" style="width: 100%;">Connect Wallet</button>
+          </div>
+
+          <div id="walletInfo" style="display:none;">
+            <p><strong>USDC Balance:</strong> <span id="usdcBalance">0</span></p>
+
+            <label for="investorType">Investor Type:</label>
+            <select id="investorType" style="width:100%; padding:6px; margin-bottom:10px; border-radius:6px;">
+              <option value="community">Community / Whitelisted</option>
+              <option value="private">Private Investor</option>
+            </select>
+
+            <label for="usdcAmount">USDC Amount</label>
+            <div style="display:flex; gap: 6px; margin-bottom: 10px;">
+              <input type="number" id="usdcAmount" min="0" step="0.01" style="flex:1; padding: 8px; border-radius: 6px; border:none;">
+              <button id="maxBtn" class="btn ghost" style="flex-shrink:0;">Max</button>
+            </div>
+
+            <p><strong>NEXA You’ll Receive:</strong> <span id="nexaAmount">0</span></p>
+
+            <div style="display:flex; gap: 6px; margin-top: 10px;">
+              <button id="approveBtn" class="btn primary" style="flex:1;">Approve USDC</button>
+              <button id="buyBtn" class="btn primary" style="flex:1;" disabled>Buy NEXA</button>
+            </div>
+
+            <div id="statusMsg" style="margin-top: 12px; font-size: 14px; color: #ccc;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokenomics, Roadmap, Community, Docs remain unchanged -->
+  <section id="tokenomics" class="section">
+    <h2>Tokenomics</h2>
+    <div class="grid two">
+      <div>
+        <img src="assets/tokenomics.png" alt="Arianexa tokenomics chart" class="img-card" />
+      </div>
+      <div>
+        <table class="table">
+          <thead><tr><th>Allocation</th><th>Percent</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Community</td><td>40%</td><td>Rewards, airdrops</td></tr>
+            <tr><td>Treasury</td><td>20%</td><td>Locked 5 years</td></tr>
+            <tr><td>Ecosystem Growth</td><td>15%</td><td>Dev, integrations, launchpad</td></tr>
+            <tr><td>Team</td><td>10%</td><td>12-month cliff, 2-year vesting</td></tr>
+            <tr><td>Charity</td><td>5%</td><td>3rd world support</td></tr>
+            <tr><td>Investors</td><td>5%</td><td>Strategic VC backers</td></tr>
+            <tr><td>Exchanges / Collabs</td><td>5%</td><td>Listings & partnerships</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="section">
+    <h2>Roadmap</h2>
+    <img src="assets/roadmap.png" alt="Arianexa roadmap" class="img-card" />
+  </section>
+
+  <section id="community" class="section">
+    <h2>Community</h2>
+    <div class="grid three socials">
+      <a class="card link" href="https://x.com/Arianexa_ai" target="_blank" rel="noopener">X (Twitter)</a>
+      <a class="card link" href="https://t.me/+Y8z9vseHZGM1NmU8" target="_blank" rel="noopener">Telegram</a>
+      <a class="card link" href="https://discord.gg/ucK2Bx8xWT" target="_blank" rel="noopener">Discord</a>
+    </div>
+  </section>
+
+  <section id="docs" class="section">
+    <h2>Docs</h2>
+    <p>Read our full whitepaper and learn more about Arianexa.</p>
+    <a class="btn ghost" href="https://arianexa.xyz/Arianexa_Whitepaper.pdf" target="_blank" rel="noopener">Open Whitepaper</a>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Arianexa. $NEXA on Base. Not financial advice.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+  <script>
+  (async () => {
+    const USDC_ADDRESS = "0x833589fCD6eDb6E08f4c7C32D4f71b54bDA02913"; // Base USDC
+    const PRESALE_ADDRESS = "0xC1C3954ad740353a5F09c31a4aEc6bD4c34e2Ad1";
+    const USDC_DECIMALS = 6;
+    const NEXA_PRICE_USDC = 0.005;
+    const MIN_BUY_COMMUNITY = 50;
+    const MIN_BUY_PRIVATE = 2000;
+
+    const USDC_ABI = [
+      "function balanceOf(address) view returns (uint256)",
+      "function allowance(address owner, address spender) view returns (uint256)",
+      "function approve(address spender, uint256 amount) returns (bool)"
+    ];
+    const PRESALE_ABI = [
+      "function buyTokens(uint256 usdcAmount) public"
+    ];
+
+    let provider, signer, usdc, presale, account;
+
+    const connectBtn = document.getElementById("connectBtn");
+    const walletInfo = document.getElementById("walletInfo");
+    const usdcBalanceEl = document.getElementById("usdcBalance");
+    const usdcAmountInput = document.getElementById("usdcAmount");
+    const nexaAmountEl = document.getElementById("nexaAmount");
+    const approveBtn = document.getElementById("approveBtn");
+    const buyBtn = document.getElementById("buyBtn");
+    const maxBtn = document.getElementById("maxBtn");
+    const statusMsg = document.getElementById("statusMsg");
+    const investorType = document.getElementById("investorType");
+
+    connectBtn.onclick = async () => {
+      if (!window.ethereum) return alert("MetaMask not found.");
+      provider = new ethers.providers.Web3Provider(window.ethereum);
+      await provider.send("eth_requestAccounts", []);
+      signer = provider.getSigner();
+      account = await signer.getAddress();
+
+      const chainId = (await provider.getNetwork()).chainId;
+      if (chainId !== 8453) {
+        try {
+          await provider.send("wallet_switchEthereumChain", [{ chainId: "0x2105" }]);
+        } catch (err) {
+          alert("Please switch to Base network in MetaMask.");
+          return;
+        }
+      }
+
+      usdc = new ethers.Contract(USDC_ADDRESS, USDC_ABI, signer);
+      presale = new ethers.Contract(PRESALE_ADDRESS, PRESALE_ABI, signer);
+
+      walletInfo.style.display = "block";
+      connectBtn.style.display = "none";
+      await updateBalance();
+    };
+
+    async function updateBalance() {
+      const bal = await usdc.balanceOf(account);
+      const humanBal = Number(ethers.utils.formatUnits(bal, USDC_DECIMALS));
+      usdcBalanceEl.textContent = humanBal.toFixed(2);
+    }
+
+    function getMinBuy() {
+      return investorType.value === "private" ? MIN_BUY_PRIVATE : MIN_BUY_COMMUNITY;
+    }
+
+    usdcAmountInput.oninput = () => {
+      const amt = parseFloat(usdcAmountInput.value) || 0;
+      const nexa = amt / NEXA_PRICE_USDC;
+      nexaAmountEl.textContent = nexa.toFixed(2);
+      buyBtn.disabled = amt < getMinBuy();
+    };
+
+    maxBtn.onclick = () => {
+      usdcAmountInput.value = usdcBalanceEl.textContent;
+      usdcAmountInput.oninput();
+    };
+
+    approveBtn.onclick = async () => {
+      const amt = parseFloat(usdcAmountInput.value);
+      if (amt < getMinBuy()) return alert(`Minimum buy is ${getMinBuy()} USDC`);
+      const weiAmt = ethers.utils.parseUnits(amt.toString(), USDC_DECIMALS);
+      statusMsg.textContent = "Approving USDC...";
+      const tx = await usdc.approve(PRESALE_ADDRESS, weiAmt);
+      await tx.wait();
+      statusMsg.textContent = "USDC Approved!";
+      buyBtn.disabled = false;
+    };
+
+    buyBtn.onclick = async () => {
+      const amt = parseFloat(usdcAmountInput.value);
+      if (amt < getMinBuy()) return alert(`Minimum buy is ${getMinBuy()} USDC`);
+      const weiAmt = ethers.utils.parseUnits(amt.toString(), USDC_DECIMALS);
+      statusMsg.textContent = "Buying tokens...";
+      const tx = await presale.buyTokens(weiAmt);
+      await tx.wait();
+      statusMsg.textContent = "Purchase successful!";
+      await updateBalance();
+    };
+  })();
+  </script>
+</body>
+</html>
